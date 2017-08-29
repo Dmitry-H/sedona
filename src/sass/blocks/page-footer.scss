@@ -1,0 +1,14 @@
+.page-footer {
+  padding: 36px 0 25px;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__hashtag {
+    margin-bottom: 36px;
+    display: block;
+    line-height: 26px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,20 @@
+.developed {
+  display: flex;
+  padding: 0 96px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-stack;
+
+  &__text {
+    line-height: 26px;
+    font-size: 14px;
+  }
+
+  &__link {
+    display: block;
+    width: 27px;
+    height: 34px;
+    font-size: 0;
+    background-image: url(../img/icon-htmlacademy.png);
+  }
+}
