@@ -11,7 +11,6 @@
 
     &:first-child {
       border-top: none;
-
       position: relative;
 
       &::after {
@@ -38,11 +37,28 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    //line-height: 40px;
     font-size: 18px;
     color: #fff;
     font-family: $font-stack;
     font-weight: bold;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &--active:hover {
+      background-color: inherit;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    &--active:active {
+      background-color: inherit;
+      color: #fff;
+    }
   }
 
   &__top {

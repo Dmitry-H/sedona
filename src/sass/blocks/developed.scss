@@ -16,5 +16,13 @@
     height: 34px;
     font-size: 0;
     background-image: url(../img/icon-htmlacademy.png);
+
+    &:hover {
+      background-image: url(../img/icon-htmlacademy-hover.png);
+    }
+
+    &:active {
+      background-image: url(../img/icon-htmlacademy-active.png);
+    }
   }
 }

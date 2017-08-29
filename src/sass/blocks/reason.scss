@@ -25,6 +25,7 @@
 
   &__header {
     display: block;
+    margin: 0;
     margin-bottom: 8px;
     font-weight: bold;
     line-height: 26px;
@@ -32,6 +33,7 @@
   }
 
   &__num {
+    margin: 0;
     margin-bottom: 16px;
     line-height: 21px;
     font-size: 14px;
@@ -39,6 +41,7 @@
   }
 
   &__description {
+    margin: 0;
     font-weight: normal;
     line-height: 21px;
     font-size: 14px;

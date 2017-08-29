@@ -31,5 +31,27 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    &--disabled {
+      background-color: #e5e5e5;
+
+      &:hover {
+        background-color: #e5e5e5;
+      }
+
+      &:active {
+        background-color: #e5e5e5;
+        color: #fff;
+      }
+    }
   }
 }
