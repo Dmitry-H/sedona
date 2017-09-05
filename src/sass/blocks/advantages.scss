@@ -12,11 +12,11 @@
 
     &--lodging::before {
       position: absolute;
-      left: 21px;
+      left: 22px;
       top: -9px;
       width: 39px;
       height: 37px;
-      background-image: url(../img/icon-house.png);
+      background-image: url(../img/icon-house.svg);
     }
 
     &--souvenirs::before {
@@ -25,7 +25,7 @@
       top: -11px;
       width: 32px;
       height: 38px;
-      background-image: url(../img/icon-gift.png);
+      background-image: url(../img/icon-gift.svg);
     }
 
     &--food::before {
@@ -34,7 +34,7 @@
       top: -5px;
       width: 40px;
       height: 35px;
-      background-image: url(../img/icon-burger.png);
+      background-image: url(../img/icon-burger.svg);
     }
 
     &::before {

@@ -1,28 +1,26 @@
 .developed {
   display: flex;
-  padding: 0 96px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: $font-stack;
+  color: #000;
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 14px;
 
   &__text {
-    line-height: 26px;
-    font-size: 14px;
+    margin-right: 11px;
   }
 
-  &__link {
+  &__logo {
     display: block;
-    width: 27px;
-    height: 34px;
-    font-size: 0;
-    background-image: url(../img/icon-htmlacademy.png);
 
-    &:hover {
-      background-image: url(../img/icon-htmlacademy-hover.png);
+    &:hover path {
+      fill: #81b3d2;
     }
 
-    &:active {
-      background-image: url(../img/icon-htmlacademy-active.png);
+    &:active path {
+      fill: #b2b2b2;
     }
   }
 }

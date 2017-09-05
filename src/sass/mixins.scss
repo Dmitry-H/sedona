@@ -3,24 +3,3 @@
   margin: 0;
   padding: 0;
 }
-
-@mixin skew-mobile {
-  content: "";
-  position: absolute;
-  bottom: -17px;
-  width: 50%;
-  height: 30px;
-  background-color: #fff;
-}
-
-@mixin skew-left($angle) {
-  @include skew-mobile;
-  left: 0;
-  transform: skewY($angle);
-}
-
-@mixin skew-right($angle) {
-  @include skew-mobile;
-  right: 0;
-  transform: skewY(-$angle);
-}

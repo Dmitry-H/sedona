@@ -1,11 +1,15 @@
 .socials {
   @include list-style;
   display: flex;
-  padding: 0 84px;
   margin-bottom: 38px;
-  justify-content: space-between;
+  justify-content: center;
 
   &__item {
+    margin-right: 6px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
   }
 
   &__link {
@@ -20,20 +24,21 @@
       display: block;
       width: 100%;
       height: 100%;
+      background-position: center center;
     }
 
     &--twitter::after {
-      background-image: url(../img/icon-twitter.png);
+      background-image: url(../img/icon-twitter.svg);
       background-repeat: no-repeat;
     }
 
     &--facebook::after {
-      background-image: url(../img/icon-facebook.png);
+      background-image: url(../img/icon-facebook.svg);
       background-repeat: no-repeat;
     }
 
     &--youtube::after {
-      background-image: url(../img/icon-youtube.png);
+      background-image: url(../img/icon-youtube.svg);
       background-repeat: no-repeat;
     }
 
