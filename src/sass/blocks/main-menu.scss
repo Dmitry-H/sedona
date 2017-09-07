@@ -13,15 +13,6 @@
     border-top: 1px solid #9ac2db;
     border-bottom: 1px solid #678fa8;
 
-    &--logo {
-      position: relative;
-      order: 1;
-      z-index: 10;
-      height: 56px;
-      border: none;
-      text-align: center;
-      background-color: #fff;
-    }
 
     &:first-child {
       border-top: none;
@@ -33,6 +24,15 @@
     }
   }
 
+  &__logo {
+    position: relative;
+    order: 1;
+    z-index: 10;
+    height: 56px;
+    border: none;
+    text-align: center;
+    background-color: #fff;
+  }
   &__link {
     display: block;
     padding: 17px 0;
