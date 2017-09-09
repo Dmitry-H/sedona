@@ -52,7 +52,10 @@
                 <p class="reason__description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </section>
             <div class="reason__image-container">
-                <img class="reason__image" src="img/photo-city-mobile.jpg" alt="Фото города">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
+                    <img class="reason__image" src="img/photo-city-mobile.jpg" alt="Фото города">
+                </picture>
             </div>
         </div>
         <ul class="advantages">
@@ -69,14 +72,17 @@
                 <div class="advantages__text">Всегда заказывайте фирменный бургер, Вы НЕ разочаруетесь!</div>
             </li>
         </ul>
-        <div class="reason">
+        <div class="reason  reason--reverse">
             <section class="reason__text  reason__text--main">
                 <h2 class="reason__header">Там есть мост дьявола</h2>
                 <p class="reason__num">— №2 —</p>
                 <p class="reason__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </section>
             <div class="reason__image-container">
-                <img class="reason__image" src="img/photo-bridge-mobile.jpg" alt="Мост Дьявола">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                    <img class="reason__image" src="img/photo-bridge-mobile.jpg" alt="Мост Дьявола">
+                </picture>
             </div>
         </div>
         <div class="reasons reasons--other">
@@ -110,7 +116,10 @@
         <a href="#" class="feedback__find-hotel">Найти гостиницу</a>
     </div>
     <div class="map">
-        <img src="img/map-mobile.jpg" alt="Карта" class="map__image">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img src="img/bg-map-mobile@1x.jpg" alt="Карта" class="map__image">
+        </picture>
     </div>
     <footer class="page-footer">
         <b class="page-footer__hashtag">#visitsedona</b>

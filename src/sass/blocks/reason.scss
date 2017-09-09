@@ -54,4 +54,39 @@
     display: block;
     width: 100%;
   }
+
+  @media ($tablet-widths) {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 45px 47px 50px;
+      flex-shrink: 1;
+
+      &--triangle {
+        background-image: none;
+      }
+
+      &--other {
+        box-shadow: none;
+      }
+    }
+
+    &__image-container {
+      flex-shrink: 0;
+    }
+
+    &__header {
+      font-size: 21px;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
 }

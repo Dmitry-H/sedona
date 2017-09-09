@@ -10,8 +10,12 @@
     font-family: $font-stack;
     text-transform: uppercase;
 
-    &--lodging::before {
+    &::before {
+      content: "";
       position: absolute;
+    }
+
+    &--lodging::before {
       left: 22px;
       top: -9px;
       width: 39px;
@@ -20,7 +24,6 @@
     }
 
     &--souvenirs::before {
-      position: absolute;
       left: 25px;
       top: -11px;
       width: 32px;
@@ -29,16 +32,11 @@
     }
 
     &--food::before {
-      position: absolute;
       left: 18px;
       top: -5px;
       width: 40px;
       height: 35px;
       background-image: url(../img/icon-burger.svg);
-    }
-
-    &::before {
-      content: "";
     }
   }
 
@@ -55,5 +53,52 @@
     line-height: 21px;
     font-size: 14px;
     color: #333333;
+  }
+
+  @media ($tablet-widths) {
+    display: flex;
+    padding: 57px 0 60px;
+    justify-content: space-around;
+
+    &__item {
+      margin-bottom: 0;
+      padding: 102px 35px 1px;
+      text-align: center;
+
+
+      &::before {
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+
+      &--lodging::before {
+        width: 75px;
+        height: 74px;
+        top: 2px;
+      }
+
+      &--souvenirs {
+        order: 1;
+        &::before {
+          width: 64px;
+          height: 91px;
+          top: 0;
+        }
+      }
+
+      &--food::before {
+        width: 76px;
+        height: 75px;
+        top: 6px;
+      }
+    }
+
+    &__header {
+      margin-bottom: 21px;
+      font-size: 21px;
+    }
   }
 }

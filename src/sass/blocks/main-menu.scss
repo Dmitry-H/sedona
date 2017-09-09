@@ -63,7 +63,6 @@
     }
   }
 
-
   &__close {
     display: block;
     position: absolute;
@@ -86,7 +85,7 @@
     font-size: 0;
   }
 
-/*  @media ($tablet-widths) {
+  @media ($tablet-widths) {
     background-color: #fff;
 
     &__items {
@@ -99,15 +98,14 @@
       flex-basis: 20%;
       flex-grow: 1;
 
-      &--logo {
-        order: 0;
-      }
-
       &:last-child {
         box-shadow: none;
       }
     }
 
+    &__logo {
+      order: 0;
+    }
 
     &__link {
       font-size: 14px;
@@ -137,12 +135,9 @@
       }
     }
 
-
-
-
     &__close,
     &__open {
       display: none;
     }
-  }*/
+  }
 }

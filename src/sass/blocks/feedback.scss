@@ -54,4 +54,17 @@
       }
     }
   }
+
+  @media ($tablet-widths) {
+    padding: 56px 155px 58px;
+
+    &__header {
+      margin-bottom: 31px;
+      font-size: 30px;
+    }
+
+    &__text {
+      margin-bottom: 42px;
+    }
+  }
 }

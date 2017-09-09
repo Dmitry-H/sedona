@@ -2,4 +2,10 @@
   &--other {
     background-color: #eeeeee;
   }
+
+  @media ($tablet-widths) {
+    &--other {
+      display: flex;
+    }
+  }
 }

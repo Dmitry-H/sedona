@@ -11,4 +11,14 @@
     font-size: 21px;
     font-weight: bold;
   }
+
+  @media ($tablet-widths) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__hashtag {
+      margin-bottom: 0;
+    }
+  }
 }

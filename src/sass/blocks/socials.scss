@@ -54,4 +54,8 @@
       opacity: 0.3;
     }
   }
+
+  @media ($tablet-widths) {
+    margin-bottom: 0;
+  }
 }
