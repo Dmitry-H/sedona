@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Седона - главная страница</title>
 </head>
-<body>
+<body class="main-bg">
 <div class="main-container">
     <header class="page-header">
         <nav class="main-menu">
@@ -21,6 +21,7 @@
                 </li>
                 <li class="main-menu__logo">
                     <picture>
+                        <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
                         <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
                         <img src="img/logo-sedona-mobile.svg" alt="City of Sedona">
                     </picture>
@@ -53,6 +54,7 @@
             </section>
             <div class="reason__image-container">
                 <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-city@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
                     <img class="reason__image" src="img/photo-city-mobile.jpg" alt="Фото города">
                 </picture>
@@ -80,6 +82,7 @@
             </section>
             <div class="reason__image-container">
                 <picture>
+                    <source media="(min-width: 1280px)" srcset="img/photo-bridge@1x.jpg">
                     <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
                     <img class="reason__image" src="img/photo-bridge-mobile.jpg" alt="Мост Дьявола">
                 </picture>
@@ -117,6 +120,7 @@
     </div>
     <div class="map">
         <picture>
+            <source media="(min-width: 768px)" srcset="img/bg-map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
             <img src="img/bg-map-mobile@1x.jpg" alt="Карта" class="map__image">
         </picture>

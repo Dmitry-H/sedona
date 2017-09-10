@@ -101,4 +101,8 @@
       font-size: 21px;
     }
   }
+
+  @media ($desktop-widths) {
+    padding: 57px 0 82px;
+  }
 }

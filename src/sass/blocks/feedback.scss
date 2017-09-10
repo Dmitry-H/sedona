@@ -1,9 +1,9 @@
 .feedback {
-
   padding: 27px 20px 49px;
   font-family: $font-stack;
   text-transform: uppercase;
   text-align: center;
+  background-color: #fff;
 
   &__header {
     margin: 0;
@@ -66,5 +66,9 @@
     &__text {
       margin-bottom: 42px;
     }
+  }
+
+  @media ($desktop-widths) {
+    padding: 56px 370px 72px;
   }
 }

@@ -2,6 +2,7 @@
   position: relative;
   z-index: 5;
   padding-bottom: 5px;
+  background-color: #fff;
 
   &__image-wrapper {
     position: relative;
@@ -24,7 +25,7 @@
   &__text {
     position: relative;
     padding: 41px 30px 0;
-    background-color: #fff;
+    //background-color: #fff;
     font-family: $font-stack;
     text-align: center;
     text-transform: uppercase;
@@ -66,5 +67,18 @@
       font-size: 21px;
     }
 
+  }
+
+  @media ($desktop-widths) {
+    &__image-wrapper {
+      padding: 77px 154px 91px;
+      background-image: url(../img/bg-intro-triangle-desktop.svg),
+      url(../img/bg-back-desktop@1x.jpg);
+      background-size: 100% auto, auto;
+    }
+
+    &__text {
+      padding: 50px 300px 46px;
+    }
   }
 }
