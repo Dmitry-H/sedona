@@ -3,3 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin input-text-style {
+  font-family: $font-stack;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @include input-text-style;}
+  &::-moz-placeholder          { @include input-text-style;}
+  &:-moz-placeholder           { @include input-text-style;}
+  &:-ms-input-placeholder      { @include input-text-style;}
+}

@@ -5,14 +5,19 @@
   background-color: #fff;
 
   &__image-wrapper {
-    position: relative;
-    padding: 91px 19px 83px;
+    padding: 53px 46px 66px;
     background-image: url(../img/bg-intro-triangle-mobile.svg),
-                      url(../img/bg-back-mobile@1x.jpg);
+    url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center,
-                          top center;
     background-size: 110% auto, auto;
+    background-position: bottom center,
+    bottom center;
+
+    &--index {
+      padding: 91px 19px 83px;
+      background-position: bottom center,
+      top center;
+    }
   }
 
   &__image {
@@ -25,7 +30,6 @@
   &__text {
     position: relative;
     padding: 41px 30px 0;
-    //background-color: #fff;
     font-family: $font-stack;
     text-align: center;
     text-transform: uppercase;

@@ -1,0 +1,250 @@
+.main-form {
+  font-family: $font-stack;
+
+  &__items {
+    @include list-style;
+
+  }
+
+  &__item {
+    padding: 19px 19px 24px;
+    box-shadow: inset 0 1px 0 0 #e5e5e5;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 22px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text-label {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &--name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &--contact {
+      padding-left: 22px;
+      margin-bottom: 5px;
+    }
+  }
+
+
+  &__text-input {
+    box-sizing: border-box;
+    padding: 0 21px;
+    height: 58px;
+    width: 100%;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+    line-height: 26px;
+    @include input-text-style;
+
+    @include placeholder;
+
+    &--textarea {
+      padding: 14px 21px;
+      height: 158px;
+      resize: none;
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #fff;
+      border: 4px solid #e5e5e5;
+    }
+
+    &--name {
+      margin-left: 22px;
+      width: 1px;
+      flex-grow: 1;
+    }
+
+    &--contact {
+      padding-right: 79px;
+      background-repeat: no-repeat;
+      background-position: 244px center, right top;
+
+      &:focus {
+        border-right: none;
+        background-position: 240px center, right top;
+      }
+    }
+
+    &--tel {
+      background-image: url(../img/icon-phone.svg),
+                        url(../img/icon-bg.png);
+    }
+
+    &--email {
+      background-image: url(../img/icon-mail.svg),
+                        url(../img/icon-bg.png);
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    margin-bottom: 42px;
+
+    &:last-child {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__error-message {
+    position: absolute;
+    left: 21px;
+    bottom: -31px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #ff5c5c;
+  }
+
+  &__controls-label {
+    display: block;
+    margin-bottom: 13px;
+    padding: 15px 0 15px 79px;
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: bold;
+
+    &--checkbox {
+      margin-bottom: 23px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__radio-button {
+    display: none;
+  }
+
+  &__radio-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+
+  &__radio-button:checked + &__radio-icon {
+    background-color: #333333;
+    border: 17px solid #f2f2f2;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+/*
+    &:hover {
+
+    }
+
+    &:active {
+
+    }*/
+  }
+
+  &__checkbox:checked + &__checkbox-icon {
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/icon-tick.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+
+  }
+
+  /*Состояния радиобаттонов и чекбоксов при наведении и нажатии*/
+
+  &__controls-label:hover &__radio-icon {
+    background-color: #e5e5e5;
+  }
+
+  &__controls-label:active &__radio-icon {
+    background-color: #d5d5d5;
+  }
+
+  &__controls-label:hover &__radio-button:checked + &__radio-icon {
+    background-color: #333333;
+    border-color: #e5e5e5;
+  }
+
+  &__controls-label:active &__radio-button:checked + &__radio-icon {
+    background-color: #a4a4a4;
+    border-color: #d5d5d5;
+  }
+
+  &__controls-label:hover &__checkbox-icon {
+    background-color: #e5e5e5;
+  }
+
+  &__controls-label:active &__checkbox-icon {
+    background-color: #d5d5d5;
+
+    &::after {
+      opacity: .3;
+    }
+  }
+
+  &__submit-container {
+    padding: 24px 19px 37px;
+  }
+
+  &__submit-button {
+    padding: 16px 0;
+    width: 100%;
+    border: none;
+    background-color: #81b3d2;
+    color: #ffffff;
+    line-height: 26px;
+    font-size: 21px;
+    font-family: $font-stack;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
