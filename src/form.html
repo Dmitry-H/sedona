@@ -47,8 +47,8 @@
     </header>
     <form action="#" class="main-form">
         <ul class="main-form__items">
-            <li class="main-form__item">
-                <h2 class="main-form__header">Представьтесь, пожалуйста:</h2>
+            <li class="main-form__item  main-form__item--name">
+                <h2 class="main-form__header  main-form__header--left">Представьтесь <span class="main-form__invisible">, пожалуйста</span>:</h2>
                 <label class="main-form__text-label  main-form__text-label--name">Имя
                     <input type="text" name="name" class="main-form__text-input  main-form__text-input--name">
                 </label>
@@ -59,8 +59,8 @@
                     <input type="text" name="middle-name" class="main-form__text-input  main-form__text-input--name">
                 </label>
             </li>
-            <li class="main-form__item">
-                <h2 class="main-form__header">Контактная информация:</h2>
+            <li class="main-form__item  main-form__item--contacts">
+                <h2 class="main-form__header  main-form__header--line">Контактная информация:</h2>
                 <div class="main-form__input-wrapper">
                     <label for="tel" class="main-form__text-label  main-form__text-label--contact">Контактный телефон:</label>
                     <input type="tel" id="tel" name="tel" placeholder="Введите телефон" class="main-form__text-input  main-form__text-input--contact  main-form__text-input--tel">
@@ -72,8 +72,8 @@
                     <div class="main-form__error-message  main-form__error-message--email">Ошибка, перепроверьте почту</div>
                 </div>
             </li>
-            <li class="main-form__item">
-                <h2 class="main-form__header">Ваше Общее впечатление:</h2>
+            <li class="main-form__item  main-form__item--impressions">
+                <h2 class="main-form__header  main-form__header--left">Ваше Общее впечатление:</h2>
                 <label for="good" class="main-form__controls-label">
                     <input type="radio" id="good" name="impressions" value="good" checked class="main-form__radio-button">
                     <span class="main-form__radio-icon"></span>
@@ -90,36 +90,41 @@
                     Затрудняюсь ответить
                 </label>
             </li>
-            <li class="main-form__item">
-                <h2 class="main-form__header">Посещенные достопримечательности:</h2>
-                <label for="devils-bridge" class="main-form__controls-label  main-form__controls-label--checkbox">
-                    <input type="checkbox" id="devils-bridge" name="devils-bridge" class="main-form__checkbox">
-                    <span class="main-form__checkbox-icon"></span>
-                    Мост Дьявола
-                </label>
-                <label for="slide-park" class="main-form__controls-label  main-form__controls-label--checkbox">
-                    <input type="checkbox" id="slide-park" name="slide-park" class="main-form__checkbox">
-                    <span class="main-form__checkbox-icon"></span>
-                    Слайд-парк
-                </label>
-                <label for="mount-bell" class="main-form__controls-label  main-form__controls-label--checkbox">
-                    <input type="checkbox" id="mount-bell" name="mount-bell" class="main-form__checkbox">
-                    <span class="main-form__checkbox-icon"></span>
-                    Гора-Колокол
-                </label>
-                <label for="red-rocks" class="main-form__controls-label  main-form__controls-label--checkbox">
-                    <input type="checkbox" id="red-rocks" name="red-rocks" class="main-form__checkbox">
-                    <span class="main-form__checkbox-icon"></span>
-                    Красные скалы
-                </label>
+            <li class="main-form__item  main-form__item--attractions">
+                <h2 class="main-form__header  main-form__header--line">Посещенные достопримечательности:</h2>
+                <div class="main-form__attractions-wrapper">
+                    <label for="devils-bridge" class="main-form__controls-label  main-form__controls-label--checkbox">
+                        <input type="checkbox" id="devils-bridge" name="devils-bridge" class="main-form__checkbox">
+                        <span class="main-form__checkbox-icon"></span>
+                        Мост Дьявола
+                    </label>
+                    <label for="slide-park" class="main-form__controls-label  main-form__controls-label--checkbox">
+                        <input type="checkbox" id="slide-park" name="slide-park" class="main-form__checkbox">
+                        <span class="main-form__checkbox-icon"></span>
+                        Слайд-парк
+                    </label>
+                    <label for="mount-bell" class="main-form__controls-label  main-form__controls-label--checkbox">
+                        <input type="checkbox" id="mount-bell" name="mount-bell" class="main-form__checkbox">
+                        <span class="main-form__checkbox-icon"></span>
+                        Гора-Колокол
+                    </label>
+                    <label for="red-rocks" class="main-form__controls-label  main-form__controls-label--checkbox">
+                        <input type="checkbox" id="red-rocks" name="red-rocks" class="main-form__checkbox">
+                        <span class="main-form__checkbox-icon"></span>
+                        Красные скалы
+                    </label>
+                </div>
             </li>
-            <li class="main-form__item">
-                <h2 class="main-form__header">Опишите свои эмоции:</h2>
-                <textarea name="emotions" id="emotions" class="main-form__text-input  main-form__text-input--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            <li class="main-form__item  main-form__item--emotions">
+                <h2 class="main-form__header  main-form__header--line">Опишите свои эмоции:</h2>
+                <div class="main-form__emotions-wrapper">
+                    <textarea name="emotions" id="emotions" class="main-form__text-input  main-form__text-input--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                </div>
             </li>
         </ul>
         <div class="main-form__submit-container">
             <button type="submit" class="main-form__submit-button">Отправить отзыв</button>
+            <div class="main-form__required-note">* - обязательные поля</div>
         </div>
     </form>
     <footer class="page-footer">

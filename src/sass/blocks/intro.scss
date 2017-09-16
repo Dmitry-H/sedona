@@ -53,10 +53,14 @@
   @media ($tablet-widths) {
 
     &__image-wrapper {
-      padding: 77px 154px 91px;
+      padding: 94px 154px 116px;
       background-image: url(../img/bg-intro-triangle-tablet.svg),
-      url(../img/bg-back-tablet@1x.jpg);
+    url(../img/bg-back-tablet@1x.jpg);
       background-size: 100% auto, auto;
+
+      &--index {
+        padding: 77px 154px 91px;
+      }
     }
 
     &__image {
@@ -64,11 +68,19 @@
     }
 
     &__text {
-      padding: 50px 75px 46px;
+      padding: 74px 163px 49px;
+
+      &--index {
+        padding: 50px 75px 46px;
+      }
     }
 
     &__description {
-      font-size: 21px;
+      font-size: 30px;
+
+      &--index {
+        font-size: 21px;
+      }
     }
 
   }
