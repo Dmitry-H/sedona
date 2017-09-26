@@ -48,7 +48,7 @@
     <form action="#" class="main-form">
         <ul class="main-form__items">
             <li class="main-form__item  main-form__item--name">
-                <h2 class="main-form__header  main-form__header--left">Представьтесь <span class="main-form__invisible">, пожалуйста</span>:</h2>
+                <h2 class="main-form__header  main-form__header--left">Представьтесь <span class="main-form__invisible-header">, пожалуйста</span>:</h2>
                 <label class="main-form__text-label  main-form__text-label--name">Имя
                     <input type="text" name="name" class="main-form__text-input  main-form__text-input--name">
                 </label>
@@ -61,19 +61,25 @@
             </li>
             <li class="main-form__item  main-form__item--contacts">
                 <h2 class="main-form__header  main-form__header--line">Контактная информация:</h2>
-                <div class="main-form__input-wrapper">
-                    <label for="tel" class="main-form__text-label  main-form__text-label--contact">Контактный телефон:</label>
-                    <input type="tel" id="tel" name="tel" placeholder="Введите телефон" class="main-form__text-input  main-form__text-input--contact  main-form__text-input--tel">
-                    <div class="main-form__error-message  main-form__error-message--tel">Ошибка, перепроверьте номер</div>
-                </div>
-                <div class="main-form__input-wrapper">
-                    <label for="email" class="main-form__text-label  main-form__text-label--contact">Электронная почта:</label>
-                    <input type="email" id="email" name="email" placeholder="Введите e-mail" class="main-form__text-input  main-form__text-input--contact  main-form__text-input--email">
-                    <div class="main-form__error-message  main-form__error-message--email">Ошибка, перепроверьте почту</div>
+                <div class="main-form__contacts-wrapper">
+                    <div class="main-form__input-wrapper">
+                        <label for="tel" class="main-form__text-label  main-form__text-label--contact"><span class="main-form__invisible-label">Контактный </span>телефон:</label>
+                        <div class="main-form__warning-wrapper">
+                            <input type="tel" id="tel" name="tel" placeholder="Введите телефон" class="main-form__text-input  main-form__text-input--contact  main-form__text-input--tel">
+                            <div class="main-form__warning">Ошибка, перепроверьте номер</div>
+                        </div>
+                    </div>
+                    <div class="main-form__input-wrapper">
+                        <label for="email" class="main-form__text-label  main-form__text-label--contact">Электронная почта:</label>
+                        <div class="main-form__warning-wrapper">
+                            <input type="email" id="email" name="email" placeholder="Введите e-mail" class="main-form__text-input  main-form__text-input--contact  main-form__text-input--email">
+                            <div class="main-form__warning">Ошибка, перепроверьте почту</div>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li class="main-form__item  main-form__item--impressions">
-                <h2 class="main-form__header  main-form__header--left">Ваше Общее впечатление:</h2>
+                <h2 class="main-form__header  main-form__header--left  main-form__header--padding">Ваше Общее впечатление:</h2>
                 <label for="good" class="main-form__controls-label">
                     <input type="radio" id="good" name="impressions" value="good" checked class="main-form__radio-button">
                     <span class="main-form__radio-icon"></span>
@@ -140,14 +146,9 @@
                 <a href="#" class="socials__link  socials__link--youtube">Youtube</a>
             </li>
         </ul>
-        <div href="https://htmlacademy.ru" class="developed">
+        <div class="developed">
             <span class="developed__text">Разработано</span>
-            <a class="developed__logo" href="https://htmlacademy.ru">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-
-  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-</svg>
-            </a>
+            <a class="developed__logo" href="https://htmlacademy.ru">HTML Academy</a>
         </div>
     </footer>
 </div>

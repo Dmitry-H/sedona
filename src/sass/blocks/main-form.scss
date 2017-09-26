@@ -110,7 +110,11 @@
     }
   }
 
-  &__error-message {
+  &__warning-wrapper {
+    position: relative;
+  }
+
+  &__warning {
     position: absolute;
     left: 21px;
     bottom: -31px;
@@ -249,7 +253,7 @@
       justify-content: space-between;
     }
 
-    &__invisible {
+    &__invisible-header {
       display: none;
     }
 
@@ -258,8 +262,10 @@
 
       &--name {
         padding: 0;
+        padding-left: 57px;
+        box-sizing: border-box;
         order: -3;
-        flex-basis: 41%;
+        flex-basis: 50%;
       }
 
       &--contacts {
@@ -360,9 +366,10 @@
       margin-bottom: 25px;
     }
 
-    &__error-message {
+    &__warning {
       left: auto;
-      top: 0;
+      bottom: auto;
+      top: -31px;
       right: 0;
     }
 
@@ -388,6 +395,85 @@
       font-size: 14px;
       text-transform: uppercase;
       font-family: $font-stack;
+    }
+  }
+
+  @media ($desktop-widths) {
+    padding: 0 120px 0;
+
+    &__item {
+      &--name {
+        padding-left: 80px;
+      }
+    }
+
+    &__header {
+      padding: 0 300px;
+
+      &--left {
+        padding: 0;
+      }
+
+      &--padding {
+        padding-left: 79px;
+      }
+
+      &--line {
+        &::before {
+          margin-right: -279px;
+        }
+
+        &::after {
+          margin-left: -279px;
+        }
+      }
+    }
+
+
+    &__invisible-header {
+      display: inline;
+    }
+
+    &__contacts-wrapper {
+      display: flex;
+      padding-top: 47px;
+    }
+
+    &__input-wrapper {
+      display: flex;
+      margin: 0;
+      box-sizing: border-box;
+      flex-basis: 50%;
+      align-items: center;
+    }
+
+    &__text-label {
+      &--contact {
+        margin: 0;
+        margin-right: 22px;
+        padding: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    &__text-input {
+      &--contact {
+        width: 315px;
+      }
+    }
+
+    &__warning {
+      right: auto;
+      left: 20px;
+      top: -34px;
+    }
+
+    &__invisible-label {
+      display: none;
+    }
+
+    &__attractions-wrapper {
+      padding: 19px 0 15px;
     }
   }
 }

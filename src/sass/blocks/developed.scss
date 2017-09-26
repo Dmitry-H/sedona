@@ -14,13 +14,18 @@
 
   &__logo {
     display: block;
+    width: 40px;
+    height: 41px;
+    background-image: url(../img/htmlacademy.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
 
-    &:hover path {
-      fill: #81b3d2;
+    &:hover {
+      background-image: url(../img/htmlacademy-hover.svg);
     }
 
-    &:active path {
-      fill: #b2b2b2;
+    &:active {
+      background-image: url(../img/htmlacademy-active.svg);
     }
   }
 }

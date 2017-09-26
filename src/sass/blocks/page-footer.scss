@@ -22,4 +22,9 @@
       margin-bottom: 0;
     }
   }
+
+  @media ($desktop-widths) {
+    padding: 41px 120px 25px;
+    justify-content: space-between;
+  }
 }
