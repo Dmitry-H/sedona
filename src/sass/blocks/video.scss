@@ -32,7 +32,6 @@
 
     &__text {
       padding: 65px 175px 73px;
-
     }
 
     &__header {
@@ -42,6 +41,18 @@
 
     &__player {
       padding: 0 60px;
+    }
+  }
+
+  @media ($desktop-widths) {
+    padding-bottom: 80px;
+
+    &__text {
+      padding: 71px 390px 69px;
+    }
+
+    &__player {
+      padding: 0 199px;
     }
   }
 }
