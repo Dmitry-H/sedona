@@ -26,4 +26,22 @@
   &__image {
     display: block;
   }
+
+  @media ($tablet-widths) {
+    box-shadow: none;
+
+    &__text {
+      padding: 65px 175px 73px;
+
+    }
+
+    &__header {
+      margin-bottom: 32px;
+      font-size: 30px;
+    }
+
+    &__player {
+      padding: 0 60px;
+    }
+  }
 }

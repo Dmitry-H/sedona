@@ -2,4 +2,10 @@
   @include list-style;
   padding-top: 23px;
   background-color: #fff;
+
+  @media ($tablet-widths) {
+    display: flex;
+    padding: 15px 60px 0;
+    flex-wrap: wrap;
+  }
 }
