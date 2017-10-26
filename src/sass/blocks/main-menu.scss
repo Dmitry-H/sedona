@@ -70,7 +70,8 @@
     right: 20px;
     width: 23px;
     height: 22px;
-    background-image: url(../img/icon-cross.png);
+    background-image: url(../img/icon-cross.svg);
+    background-repeat: no-repeat;
     font-size: 0;
   }
 
@@ -80,8 +81,9 @@
     top: 18px;
     right: 20px;
     width: 23px;
-    height: 21px;
-    background-image: url(../img/icon-menu.png);
+    height: 22px;
+    background-image: url(../img/icon-menu.svg);
+    background-repeat: no-repeat;
     font-size: 0;
   }
 
